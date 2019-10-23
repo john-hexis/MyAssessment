@@ -60,17 +60,17 @@ class BaseDataAccess<T> where T: ModelProtocol {
             } catch let error as NSError {
                 onFailure(error)
             }
-//
-//            self.privateManagedObjectContext.perform({
-//                do {
-//                    if self.privateManagedObjectContext.hasChanges {
-//                        try self.privateManagedObjectContext.save()
-//                    }
-//                    onSuccess()
-//                } catch let error as NSError {
-//                    onFailure(error)
-//                }
-//            })
+
+            self.privateManagedObjectContext.perform({
+                do {
+                    if self.privateManagedObjectContext.hasChanges {
+                        try self.privateManagedObjectContext.save()
+                    }
+                    onSuccess()
+                } catch let error as NSError {
+                    onFailure(error)
+                }
+            })
         }
     }
     
@@ -94,6 +94,17 @@ class BaseDataAccess<T> where T: ModelProtocol {
             } catch let error as NSError {
                 onFailure(error)
             }
+            
+            self.privateManagedObjectContext.perform({
+                do {
+                    if self.privateManagedObjectContext.hasChanges {
+                        try self.privateManagedObjectContext.save()
+                    }
+                    onSuccess()
+                } catch let error as NSError {
+                    onFailure(error)
+                }
+            })
         }
     }
     
@@ -116,6 +127,17 @@ class BaseDataAccess<T> where T: ModelProtocol {
                 } catch let error as NSError {
                     onFailure(error)
                 }
+
+                self.privateManagedObjectContext.perform({
+                    do {
+                        if self.privateManagedObjectContext.hasChanges {
+                            try self.privateManagedObjectContext.save()
+                        }
+                        onSuccess()
+                    } catch let error as NSError {
+                        onFailure(error)
+                    }
+                })
             } catch let error as NSError {
                 onFailure(error)
             }
