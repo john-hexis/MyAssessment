@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in MobileUsageListInteractor.getMobileUsageList():MobileUsageListInteractor.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MobileUsageResponseModel.init(from:):MobileUsageResponseModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in NSURLSession.request(url:method:headers:params:onSuccess:onError:):URLSession+Request.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in MobileUsageRemoteDataSource.getMobileDataUsage(onSuccess:onError:):MobileUsageRemoteDataSource.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MobileUsageListInteractor.getMobileUsageList():MobileUsageListInteractor.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MobileUsageListPresenter.processMobileUsageList(model:):MobileUsageListPresenter.swift">
+      </ContextState>
+      <ContextState
+         contextName = "MobileUsageListViewController.tableView(_:cellForRowAt:):MobileUsageListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.presenter?.recordDictionary">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BaseResponseModel.init(from:):BaseResponseModel.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in NSURLSession.request(url:method:headers:params:onSuccess:onError:):URLSession+Request.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

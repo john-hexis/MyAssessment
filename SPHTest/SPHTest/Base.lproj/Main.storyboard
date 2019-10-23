@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZSY-p2-mZF">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="XBe-hM-sAk">
+            <objects>
+                <navigationController id="ZSY-p2-mZF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dcr-Mf-Thx">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="07s-t2-Jd1" kind="relationship" relationship="rootViewController" id="ACy-vb-yaG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JWa-3R-P75" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1086" y="-459"/>
+        </scene>
+        <!--SPH-->
+        <scene sceneID="eU4-Bb-dfH">
+            <objects>
+                <viewController storyboardIdentifier="MobileUsageListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="07s-t2-Jd1" customClass="MobileUsageListViewController" customModule="SPHTest" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FtP-85-Yf9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kNt-Pz-Gj7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="suJ-1i-ykW" firstAttribute="bottom" secondItem="kNt-Pz-Gj7" secondAttribute="bottom" id="3Gp-EH-CZ0"/>
+                            <constraint firstItem="suJ-1i-ykW" firstAttribute="trailing" secondItem="kNt-Pz-Gj7" secondAttribute="trailing" id="Ulp-EA-w7h"/>
+                            <constraint firstItem="kNt-Pz-Gj7" firstAttribute="top" secondItem="suJ-1i-ykW" secondAttribute="top" id="beh-HP-gcT"/>
+                            <constraint firstItem="kNt-Pz-Gj7" firstAttribute="leading" secondItem="suJ-1i-ykW" secondAttribute="leading" id="xP4-iR-5Cz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="suJ-1i-ykW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="SPH" id="kWo-f8-cyc">
+                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="FHy-n6-Xwc">
+                            <connections>
+                                <action selector="refreshTapped:" destination="07s-t2-Jd1" id="1L9-4d-chB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mobileUsageTableView" destination="kNt-Pz-Gj7" id="gIV-IY-mQJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G02-pL-VKd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284.05797101449275" y="-459.375"/>
+        </scene>
+    </scenes>
+</document>
